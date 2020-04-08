@@ -1,5 +1,5 @@
 # find-close-meteorites
-Python tutorial in acloud.guru
+Python tutorial in acloud.guru, gets data from NASA
 
 
 ## Running
@@ -7,3 +7,5 @@ Python tutorial in acloud.guru
 This project requries Python3 and requests package.
 
 `python3 find_meteors.py`
+
+
