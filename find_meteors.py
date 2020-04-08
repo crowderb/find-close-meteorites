@@ -32,14 +32,14 @@ if __name__ == '__main__':
 
     meteor_data.sort(key=get_dist)
 
-    try:
-        print(meteor_data[0:10])
-    except UnicodeEncodeError as uee:
-        print("UnicodeEncodeError:")
-        print(type(uee))
-        print(uee.args)
-        print(uee)
-    except Exception as ex:
-        print(type(ex))
-        print(ex.args)
-        print(ex)
+    for i in range(len(meteor_data)):
+        try:
+            print(meteor_data[i])
+        except UnicodeEncodeError as uee:
+            print("UnicodeEncodeError in row {}:", i)
+            print(type(uee))
+            print(uee)
+        except Exception as ex:
+            print("Exception in row {}:", i)
+            print(type(ex))
+            print(ex)
